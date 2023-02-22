@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tip calculator🧮</title>
+        <style>
+            p{
+                display: inline-block;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            body{
+                background-color: rgba(99, 9, 183, 0.822);
+            }
+            input{
+                border-radius: 10px;
+                height: 25px;
+                width: 250px;
+            }
+             
+        </style>
+    </head>
+    <body class="b">
+
+        <div style="border-radius: 30px; width: 300px;height: 480px;margin-left: 470px;margin-top: 40px;
+            color: white;background-color: black;padding-left: 20px;">
+
+            <div>          
+                <p>Bill total</p>
+                <div><p>₹</p> <input  class="bill"  type="text" onkeyup="action()"> </div>
+                <p>Tip</p>
+                <div><p>%</p><input class="tip"  type="text"  onkeyup="action()"> </div>
+            </div>
+
+
+            <div style="display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-top: 50px;"> 
+
+                <div>
+                    <p style="display: block;">People</p>
+
+                    <button class="addbutton"
+                    style="background-color:rgba(99, 9, 183, 0.822);color:white;width: 30px;
+                    height: 30px;border-radius: 20px;cursor: pointer;" 
+                    onkeyup="action()">+</button>
+
+                    <p class="totalperson" onkeyup="action()">1</p>
+
+                    <button class="subbutton"
+                    style="background-color:rgba(99, 9, 183, 0.822);color:white;width: 30px;
+                    height: 30px;border-radius: 20px;cursor: pointer;"
+                    onkeyup="action()">-</button>
+                </div>
+
+                <div>
+                    <p>Total per person</p>
+                    <div><p>₹</p><p class="displaytotal">0.00</p></div>
+                </div>
+            </div>
+        </div>
+        <footer style="color: white;position: absolute;right: 80px;top: 460px;">
+            <p>Created by:</p>
+            <a href="https://surya1970200.github.io/my_profolio.com/" target="_blank"
+             style="color: white;font-family: Arial, Helvetica, sans-serif;font-weight: bolder;font-size: 40px;
+             ">Surya</a>
+        </footer>
+    </body>
+    <script src="tip_calculator.js"></script>
+</html>
